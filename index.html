@@ -37,6 +37,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
+    <!-- Hiệu ứng bật trình chiếu ảnh Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <!-- Hiệu ứng chạy trang Slick JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
     <!-- CSS HTML-->
     <link rel="stylesheet" href="./CSS/style.css">
 
@@ -112,7 +127,7 @@
 
     <!-- BANNER/CAROUSEL -->
     <section class="carousel_banner">
-        <div id="carouselExampleCaptions" class="banner carousel slide carousel-fade" data-ride="carousel">
+        <div id="carousel__Captions" class="banner carousel slide carousel-fade" data-ride="carousel">
             <!-- data-ride="carousel" -->
             <!-- banner -->
             <div class="carousel-inner">
@@ -184,26 +199,28 @@
 
             <!-- 2nút -->
             <div class="carousel_btn">
-                <button class="carousel_btnL" data-slide="prev" type="button" data-target="#carouselExampleCaptions">
+                <button class="carousel_btnL" data-slide="prev" type="button" data-target="#carousel__Captions">
                     <i class="fa-solid fa-left-long"></i>
                 </button>
-                <button class="carousel_btnR" data-slide="next" type="button" data-target="#carouselExampleCaptions">
+                <button class="carousel_btnR" data-slide="next" type="button" data-target="#carousel__Captions">
                     <i class="fa-solid fa-right-long"></i>
                 </button>
             </div>
             <!-- sóng -->
             <div class="carousel_wave_Light">
-                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <defs></defs>
-                    <path id="carousel_wave_Light" d="" />
-                </svg>
+                <div class="shape">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                        <path fill-opacity="1">
+                            <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                                values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                      M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
             </div>
-            <div class="carousel_wave_Dark">
-                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <defs></defs>
-                    <path id="carousel_wave_Dark" d="" />
-                </svg>
-            </div>
+        </div>
+
         </div>
     </section>
 
@@ -280,7 +297,6 @@
     </section>
 
 
-
     <!-- SERVICES -->
     <section class="SERVICES1">
         <div class="container sevices">
@@ -329,7 +345,6 @@
     </section>
 
 
-
     <!-- OUR GALLERY -->
     <section class="OUR_GALLERY">
         <div class="container gallery">
@@ -339,7 +354,8 @@
             </div>
             <div class="row gallery_card">
                 <div class="col-lg-4 col-md-6">
-                    <a href="" class="gallery_box">
+                    <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 1"
+                        data-src="./img/gallery1.jpg">
                         <div class="gallery_item">
                             <img class="card-img-bottom" src="./img/gallery1.jpg" alt="">
                             <div class="gallery_overlay"></div>
@@ -351,7 +367,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <a href="" class="gallery_box">
+                    <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 2"
+                        data-src="./img/gallery2.jpg">
                         <div class="gallery_item">
                             <img class="card-img-bottom" src="./img/gallery2.jpg" alt="">
                             <div class="gallery_overlay"></div>
@@ -363,7 +380,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <a href="" class="gallery_box">
+                    <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 3"
+                        data-src="./img/gallery3.jpg">
                         <div class="gallery_item">
                             <img class="card-img-bottom" src="./img/gallery3.jpg" alt="">
                             <div class="gallery_overlay"></div>
@@ -375,7 +393,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <a href="" class="gallery_box">
+                    <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 4"
+                        data-src="./img/gallery4.jpg">
                         <div class="gallery_item">
                             <img class="card-img-bottom" src="./img/gallery4.jpg" alt="">
                             <div class="gallery_overlay"></div>
@@ -387,7 +406,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <a href="" class="gallery_box">
+                    <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 5"
+                        data-src="./img/gallery5.jpg">
                         <div class="gallery_item">
                             <img class="card-img-bottom" src="./img/gallery5.jpg" alt="">
                             <div class="gallery_overlay"></div>
@@ -399,7 +419,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <a href="" class="gallery_box">
+                    <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 6"
+                        data-src="./img/gallery6.jpg">
                         <div class="gallery_item">
                             <img class="card-img-bottom" src="./img/gallery6.jpg" alt="">
                             <div class="gallery_overlay"></div>
@@ -434,17 +455,338 @@
     </section>
 
 
-
-
     <!-- SKILL -->
+    <section class="SKILL_SUCCESS">
+        <div class="row container skill">
+            <div class="skill_left col-lg-6">
+                <img src="./img/skill.jpg" alt="">
+            </div>
+            <div class="skill_right col-lg-6">
+                <h4>YOUR SUCCESS IS OUR SUCCESS</h4>
+                <h2>Web design, marketing & SEO solutions that get results</h2>
+                <div class="skill_info info1">
+                    <div class="skill_text">
+                        <p>Marketing</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill_dark">
+                        <div class="skill_line">
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_info info2">
+                    <div class="skill_text">
+                        <p>Responsive Web design</p>
+                        <p>95%</p>
+                    </div>
+                    <div class="skill_dark">
+                        <div class="skill_line">
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_info info3">
+                    <div class="skill_text">
+                        <p>Analytics</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="skill_dark">
+                        <div class="skill_line">
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_info info4">
+                    <div class="skill_text">
+                        <p>Web Development</p>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill_dark">
+                        <div class="skill_line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
     <!-- FEEDBACK -->
+    <section class="FEEDBACK">
+        <div class="container feedback">
+            <div class="feedback_text">
+                <h4>HAPPY CLIENTS FEEDBACK</h4>
+                <h2>Reviews and Testimonials</h2>
+            </div>
+            <div class="feedback_slide">
+                <div class="feedback_item">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback1.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>John Wilson</h5>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_item">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback2.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Julia Sakura</h5>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_item">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback3.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Roy Linderson</h5>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_item">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback4.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Smith Johnson</h5>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
 
     <!-- LATEST NEWS -->
+    <section class="LATEST_NEWS">
+        <div class="container news">
+            <h4>LATEST NEWS</h4>
+            <h2>Our insight and articles</h2>
+            <div class="row news_card">
+                <div class="card col-lg-4 col-md-6">
+                    <div class="news_box">
+                        <div class="news_img">
+                            <a href="">
+                                <img src="./img/blog1.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                        <div class="news_body">
+                            <a href="">Startup Business</a><br>
+                            <a href="">Hello world!</a>
+                        </div>
+                        <div class="news_footer">
+                            <a href=""><img src="./img/iconTLNA2.png" alt=""></a>
+                            <div>
+                                <span>by</span>
+                                <a href="">NgocAnh</a>
+                            </div>
+                            <div>
+                                <span>April 1, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="news_box">
+                        <div class="news_img">
+                            <a href="">
+                                <img src="./img/blog2.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                        <div class="news_body">
+                            <a href="">Business in NY</a><br>
+                            <a href="">Companies in NY</a>
+                        </div>
+                        <div class="news_footer">
+                            <a href=""><img src="./img/iconTLNA2.png" alt=""></a>
+                            <div>
+                                <span>by</span>
+                                <a href="">NgocAnh</a>
+                            </div>
+                            <div>
+                                <span>April 1, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="news_box">
+                        <div class="news_img">
+                            <a href="">
+                                <img src="./img/blog3.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                        <div class="news_body">
+                            <a href="">Marketing Strategy</a><br>
+                            <a href="">Design breakthrough</a>
+                        </div>
+                        <div class="news_footer">
+                            <a href=""><img src="./img/iconTLNA2.png" alt=""></a>
+                            <div>
+                                <span>by</span>
+                                <a href="">NgocAnh</a>
+                            </div>
+                            <div>
+                                <span>April 1, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
 
     <!-- CONTACT/EMAIL -->
 
     <!-- FOOTER -->
+    <footer>
+        <div class="container footer_top">
+            <div class="footer_top__text">
+                <h2>Let’s find out how to work together</h2>
+                <p>
+                    Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem
+                    ipsum dolor sit amet elit.
+                </p>
+            </div>
+            <div class="footer_top__form">
+                <form class="footer_top__mail">
+                    <input type="email" placeholder="Your Email Address">
+                    <button>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <button>
+                        <span>Subscribe</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row container footer_button">
+            <div class="col-lg-4 col-md-6 footer_button__1">
+                <a class="header_logo" href="#">
+                    <i class="fa fa-align-right"></i>
+                    <div class="header_logo_text">
+                        <h3>Corp Vision</h3>
+                        <p>Vision to your Future</p>
+                    </div>
+                </a>
+                <p>
+                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                    tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                </p>
+                <div class="footer_button__1logo">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 footer_button__2">
+                <h3>CONTACT INFO</h3>
+                <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+                <div>
+                    <span>Phone Number:</span>
+                    <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+                </div>
+                <div>
+                    <span>Email:</span>
+                    <a href="mailto::info@example.com">info@example.com</a>
+                </div>
+                <div>
+                    <span>Support:</span>
+                    <a href="mailto::info@support.com">info@support.com</a>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__3">
+                <h3>CATEGORIES</h3>
+                <ul>
+                    <li><a href="">Marketing Strategy</a></li>
+                    <li><a href="">Startup Business</a></li>
+                    <li><a href="">Web development</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__4">
+                <h3>META</h3>
+                <ul>
+                    <li><a href="">Log in</a></li>
+                    <li><a href="">Entries feed</a></li>
+                    <li><a href="">Comments feed</a></li>
+                    <li><a href="">WordPress.org</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_copyright">
+            <div class="container">
+                <p>
+                    © 2024 All Rights Reserved | Design by
+                    <span>
+                        Trần Lưu Ngọc Anh "siêu cấp đẹp trai"
+                    </span>
+                    .
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- BACKTOTOP -->
+    <a href="" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+
 
 
 
@@ -504,34 +846,6 @@
     </script>
 
 
-    <!-- SÓNG WAVE: -->
-    <!-- gsap cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- nhập thư viện Wave -->
-    <script src="./JS/Wave/wavify.js"></script>
-    <script src="./JS/Wave/jquery.wavify.js"></script>
-    <!-- lệnh tạo For jQuery -->
-    <script type="text/javascript">
-        var myWave = $('#carousel_wave_Light').wavify({
-            height: 40,
-            bones: 4, //số đợt sóng
-            amplitude: 150, //độ cao của sóng
-            color: 'rgba(255, 255, 255, 1)',
-            speed: .1
-        });
-    </script>
-    <script type="text/javascript">
-        var myWave = $('#carousel_wave_Dark').wavify({
-            height: 40,
-            bones: 4, //số đợt sóng
-            amplitude: 150, //độ cao của sóng
-            color: '#151421',
-            speed: .1
-        });
-    </script>
-
 
     <!-- Trình chiếu ảnh Fancybox JS -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -541,6 +855,34 @@
             // Your custom options
         });
     </script>
+
+
+
+    <!-- Hiệu ứng chạy trang Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.feedback_slide').slick({
+                // setting-name: setting-value
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                // autoplay: true,
+                autoplaySpeed: 4000,
+
+            });
+        });
+    </script>
+
+    <!-- BACKTOTOP -->
+    <script src="./JS/util.js"></script>
+    <script src="./JS/main.js"></script>
+
 
 </body>
 
