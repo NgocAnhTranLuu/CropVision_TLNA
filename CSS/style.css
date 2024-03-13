@@ -45,9 +45,13 @@ p {
 
 .container {
     margin: auto;
+    width: 90%;
 }
 
-
+@mixin make-row {
+    margin-left: 0;
+    margin-left: 0;
+}
 /* HEADER -------------------------------------------------------------------*/
 header {
     position: fixed;
@@ -62,7 +66,7 @@ header {
 
 .navbar {
     background: none;
-    padding: 0;
+    /* padding: 0; */
 }
 
 .header_logo {
@@ -378,13 +382,22 @@ header.sticky .dropdown-menu a:hover {
 
 @media screen and (max-width: 576px) {
     .carousel_banner .carousel_text h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .carousel_banner .carousel_text p {
         font-size: 16px;
     }
 
+    .navbar{
+        padding: 0 20px;
+    }
+
+    .carousel_btn {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 300px;
+    }
     .carousel_btnL,
     .carousel_btnR {
         width: 40px;
@@ -394,12 +407,12 @@ header.sticky .dropdown-menu a:hover {
 
 }
 
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
     .carousel_banner .carousel_text h1 {
         font-size: 26px;
     }
 
-}
+} */
 
 
 
@@ -409,8 +422,7 @@ header.sticky .dropdown-menu a:hover {
     padding: 150px 0 100px;
 }
 
-.aboutUs .aboutUs_left,
-{
+.aboutUs .aboutUs_left {
 padding-right: 50px;
 }
 
@@ -1095,9 +1107,6 @@ footer hr {
 
 
 
-.footer_button__2{
-
-}
 
 
 
@@ -1117,6 +1126,18 @@ text-align: center;
 }
 
 
+@media screen and (max-width: 576px) {
+
+    .footer_top__mail input,
+    .footer_top__mail button:last-child,
+    .footer_top__mail button{
+        padding: 15px 10px;
+    }
+    .footer_top__mail button{
+        font-size: 16px;
+    }
+
+}
 
 
 
