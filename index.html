@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/iconTLNA2.png" type="image/x-icon">
-    <title>CorpVision - TranLuuNgocAnh</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Sát hạch lái xe Yên Bái</title>
 
 
     <!-- FONT WEB GG -->
@@ -66,10 +66,10 @@
         <div class="header">
             <nav class="container-xl navbar navbar-expand-lg">
                 <a class="header_logo" href="#">
-                    <i class="fa fa-align-right"></i>
+                    <img src="./img/logo.png" alt="">
                     <div class="header_logo_text">
-                        <h3>Corp Vision</h3>
-                        <p>Vision to your Future</p>
+                        <h3>SÁT HẠCH LÁI XE</h3>
+                        <p>15 ĐINH TIÊN HOÀNG - YÊN BÁI</p>
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -81,15 +81,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-lg-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Tin tức</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">Khóa học</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thi thử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bài giảng</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                 aria-expanded="false">
                                 Pages
@@ -100,14 +106,10 @@
                                 <a class="dropdown-item" href="#">landing page</a>
                                 <a class="dropdown-item" href="#">elements page</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <form class="header_form form-inline">
-                        <!-- my-2 my-lg-0 / mr-sm-2 /  my-2 my-sm-0-->
                         <input class="header_input form-control " type="search" placeholder="Search" aria-label="Search"
                             required>
                         <button class="header_btn btn btn-outline-success" type="submit">
@@ -116,8 +118,7 @@
                     </form>
 
                     <a class="header_dark" id="dark_light" href="javascript:void(0);">
-                        <i class="bi bi-moon-stars"></i>
-                        <!-- <i class="bi bi-brightness-high-fill"></i> -->
+                        <i class="fa-solid fa-user"></i>
                     </a>
                 </div>
             </nav>
@@ -127,101 +128,204 @@
 
     <!-- BANNER/CAROUSEL -->
     <section class="carousel_banner">
-        <div id="carousel__Captions" class="banner carousel slide carousel-fade" data-ride="carousel">
-            <!-- data-ride="carousel" -->
-            <!-- banner -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <!-- nút - chuyển -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+
             <div class="carousel-inner">
                 <div class="carousel_item carousel-item active">
-                    <div class="carousel_text">
-                        <div class="container">
-                            <h1 class="animate__animated animate__fadeInUp animate__delay-2s">We will solve your issues
-                                our vision to your future</h1>
-                            <p class="animate__animated animate__fadeInDown animate__delay-1s">Lorem ipsum dolor sit
-                                amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nisi ut ea. </p>
-                            <button class="btn_click animate__animated animate__fadeInDown animate__delay-2s">Learn
-                                More</button>
+                    <div class="carousel-caption d-md-block">
+                        <h5>KHÓA HỌC LÁI XE HẠNG B1,B2</h5>
+                        <p class="animate__animated animate__fadeInDown animate__delay-1s">Vững Tay Lái - Chắc Tương Lai
+                        </p>
+                        <div>
+                            <a href="#"><button
+                                    class="btn_click_trang animate__animated animate__fadeInDown animate__delay-2s">Xem
+                                    chi tiết</button></a>
+                            <a href="#"><button
+                                    class="btn_click_do animate__animated animate__fadeInDown animate__delay-2s">Đăng ký
+                                    ngay</button></a>
                         </div>
+                        <button class="gioThemSanPham" value="SP003"></button>
                     </div>
                     <div class="carousel_img">
-                        <img src="./img/b1.jpeg" class="d-block w-100" alt="...">
+                        <img src="./img/banner_1.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <div class="carousel_item carousel-item">
-                    <div class="carousel_text">
-                        <div class="container">
-                            <h1 class="animate__animated animate__fadeInUp animate__delay-2s">Embracing success do our
-                                best, need best advice</h1>
-                            <p class="animate__animated animate__fadeInDown animate__delay-1s">Lorem ipsum dolor sit
-                                amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nisi ut ea. </p>
-                            <button class="btn_click animate__animated animate__fadeInDown animate__delay-2s">Get
-                                Started</button>
+                    <div class="carousel-caption d-md-block">
+                        <h5>Hệ thống sát hạch lý thuyết lái xe trực tuyến.</h5>
+                        <p class="animate__animated animate__fadeInDown animate__delay-1s">Với những tính năng tối ưu.
+                        </p>
+                        <div>
+                            <a href="#"><button
+                                    class="btn_click_trang animate__animated animate__fadeInDown animate__delay-2s">Xem
+                                    chi tiết</button></a>
+                            <a href="#"><button
+                                    class="btn_click_do animate__animated animate__fadeInDown animate__delay-2s">Đăng ký
+                                    ngay</button></a>
                         </div>
                     </div>
                     <div class="carousel_img">
-                        <img src="./img/b2.jpeg" class="d-block w-100" alt="...">
+                        <img src="./img/banner_2.webp" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <div class="carousel_item carousel-item">
-                    <div class="carousel_text">
-                        <div class="container">
-                            <h1 class="animate__animated animate__fadeInUp animate__delay-2s">Digital transformation
-                                driven by technology</h1>
-                            <p class="animate__animated animate__fadeInDown animate__delay-1s">Lorem ipsum dolor sit
-                                amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nisi ut ea. </p>
-                            <button class="btn_click animate__animated animate__fadeInDown animate__delay-2s">Learn
-                                More</button>
+                    <div class="carousel-caption d-md-block">
+                        <h5>Hỗ trợ học lái xe trực tuyến.</h5>
+                        <p class="animate__animated animate__fadeInDown animate__delay-1s">Thân thiện với người dùng.
+                        </p>
+                        <div>
+                            <a href="#"><button
+                                    class="btn_click_trang animate__animated animate__fadeInDown animate__delay-2s">Xem
+                                    chi tiết</button></a>
+                            <a href="#"><button
+                                    class="btn_click_do animate__animated animate__fadeInDown animate__delay-2s">Đăng ký
+                                    ngay</button></a>
                         </div>
                     </div>
                     <div class="carousel_img">
-                        <img src="./img/b3.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <div class="carousel_item carousel-item">
-                    <div class="carousel_text">
-                        <div class="container">
-                            <h1 class="animate__animated animate__fadeInUp animate__delay-2s">For those who believe in
-                                leaving a mark</h1>
-                            <p class="animate__animated animate__fadeInDown animate__delay-1s">Lorem ipsum dolor sit
-                                amet, elit, sed do eiusmod ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nisi ut ea. </p>
-                            <button class="btn_click animate__animated animate__fadeInDown animate__delay-2s">Contact
-                                Now</button>
-                        </div>
-                    </div>
-                    <div class="carousel_img">
-                        <img src="./img/b4.jpeg" class="d-block w-100" alt="...">
+                        <img src="./img/banner_3.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
             </div>
 
-            <!-- 2nút -->
-            <div class="carousel_btn">
-                <button class="carousel_btnL" data-slide="prev" type="button" data-target="#carousel__Captions">
-                    <i class="fa-solid fa-left-long"></i>
-                </button>
-                <button class="carousel_btnR" data-slide="next" type="button" data-target="#carousel__Captions">
-                    <i class="fa-solid fa-right-long"></i>
-                </button>
-            </div>
-            <!-- sóng -->
-            <div class="carousel_wave_Light">
-                <div class="shape">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
-                        <path fill-opacity="1">
-                            <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
-                                values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-                      M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
-                            </animate>
-                        </path>
-                    </svg>
-                </div>
-            </div>
+            <!-- 2 nút sang trái phải -->
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
         </div>
+    </section>
+
+    <!-- CÁC LOẠI BẰNG + GIÁ -->
+    <section class="LoaiBang">
+        <div class="container model">
+            <div class="model_text">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <h2>Sát hạch lái xe Yên Bái</h2>
+                <p>
+                    Sau hơn 10 năm thành lập, chúng tôi tự hào là hệ thống đào tạo và sát hạch học lái xe ô tô dẫn đầu
+                    cả nước về quy mô và chất lượng giảng dạy. Chức năng và nhiệm vụ chuyên tổ chức đào tạo GPLX ô tô và
+                    nâng hạng bằng lái theo quy định của Bộ GTVT.
+                    <br>
+                    <br>
+                    Với phương châm hoạt động “tận tâm vì sự an toàn của học viên”, chúng tôi luôn mang đến các khóa học
+                    lái xe ô tô có chất lượng tốt nhất với mức học phí hợp lý và rẻ nhất thị trường. Hiện nay, trung tâm
+                    tập trung đầu tư mạnh về cơ sở vật chất, trang thiết bị cảm ứng đồng thời nghiên cứu đổi mới quy
+                    trình quản lý và đào tạo nhằm phục vụ học viên tốt hơn nữa. Những năm gần đây, tỷ lệ học viên đỗ sát
+                    hạch và được cấp GPLX tại Trung tâm luôn ở mức trên 95%.
+                </p>
+            </div>
+
+
+            <div class="row model_card">
+                <div class="card col-lg-4 col-md-6">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="#">
+                                <img src="./img/anh14.jpeg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="#"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a>
+                                    <button class="btn_click_do">Đăng ký</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="#">HỌC LÁI BẰNG B1</a><br>
+                            <h3>15.900.000 VNĐ</h3>
+                            <!-- <h4>Trọn gói không phát sinh</h4> -->
+                            <hr>
+                            <p>
+                                Thời gian học: 3,5 tháng (1 tuần học 1 buổi)
+                                <br>
+                                Hồ sơ: Miễn phí
+                                <br>
+                                Lịch học: Hỗ trợ linh động
+                                <br>
+                                Hỗ trợ: Học đậu 100%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="#">
+                                <img src="./img/anh13.jpeg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="#"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a>
+                                    <button class="btn_click_do">Đăng ký</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="#">HỌC LÁI BẰNG  B2</a><br>
+                            <h3>18.900.000 VNĐ</h3>
+                            <!-- <h4>Trọn gói không phát sinh</h4> -->
+                            <hr>
+                            <p>
+                                Thời gian học: 3,5 tháng (1 tuần học 1 buổi)
+                                <br>
+                                Hồ sơ: Miễn phí
+                                <br>
+                                Lịch học: Hỗ trợ linh động
+                                <br>
+                                Hỗ trợ: Học đậu 100%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="#">
+                                <img src="./img/anh12.jpeg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="#"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a>
+                                    <button class="btn_click_do">Đăng ký</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="#">HỌC LÁI BẰNG C</a><br>
+                            <h3>15.900.000 VNĐ</h3>
+                            <!-- <h4>Trọn gói không phát sinh</h4> -->
+                            <hr>
+                            <p>
+                                Thời gian học: 3,5 tháng (1 tuần học 1 buổi)
+                                <br>
+                                Hồ sơ: Miễn phí
+                                <br>
+                                Lịch học: Hỗ trợ linh động
+                                <br>
+                                Hỗ trợ: Học đậu 100%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
 
         </div>
+
     </section>
 
 
@@ -229,32 +333,33 @@
     <section class="ABOUT_US">
         <div class="row container aboutUs">
             <div class="aboutUs_left col-lg-6">
-                <h4>ABOUT US</h4>
-                <h2>We make the best strategies for you, Enhancing your success</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
+                <!-- <h4>VỀ CHÚNG TÔI</h4> -->
+                <h2>Vì sao nên đăng ký lựa chọn chúng tôi?</h2>
+                <p>Chúng tôi lấy chữ “Tín” lên làm hàng đầu, đảm bảo và cố gắng hết sức để cho Quý học có một khoá học
+                    lái xe ô tô được hài lòng và chất lượng nhất. Sự hài lòng của Quý học viên là mục tiêu hướng đến và
+                    là yếu tố quyết định đến sự phát triển của chúng tôi.</p>
                 <ul>
                     <li><a href="">
                             <i class="fa-solid fa-check"></i>
-                            UI/UX Design and Development</a></li>
+                            Học phí là trọn gói cam kết không phát sinh</a></li>
                     <li><a href="">
                             <i class="fa-solid fa-check"></i>
-                            Branding Design and Identity</a></li>
+                            Thời gian học linh hoạt</a></li>
                     <li><a href="">
                             <i class="fa-solid fa-check"></i>
-                            Mobile App Design and Development</a></li>
+                            Giáo viên nhiều năm kinh nghiệm</a></li>
                 </ul>
             </div>
             <div class="aboutUs_right col-lg-6">
                 <div class="aboutUs_Img_L">
-                    <img src="./img/about1.jpg" alt="">
+                    <img src="./img/anh6.jpeg" alt="">
                 </div>
                 <div class="aboutUs_Img_R">
                     <div class="aboutUs_Img_T">
-                        <img src="./img/about2.jpg" alt="">
+                        <img src="./img/anh1.jpeg" alt="">
                     </div>
                     <div class="aboutUs_Img_B">
-                        <img src="./img/about3.jpg" alt="">
+                        <img src="./img/anh8.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -263,101 +368,21 @@
     </section>
 
 
-    <!-- CHALLENGES -->
-    <section class="CHALLENGES1">
-        <div class="row container challenges">
-            <div class="challenges_left col-lg-6">
-                <h4>EVERY DAY BRINGS NEW CHALLENGES</h4>
-                <h2>Creative agency focused on vision, product and people</h2>
-                <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut
-                    lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse
-                    non init magnaa velit efficitur, dolor eget ex fermentum.</p>
-                <button class="btn_click">Discover More</button>
-            </div>
-            <div class="row challenges_right col-lg-6">
-                <div class="challenges_item">
-                    <i class="fa-solid fa-gears"></i>
-                    <p>Our Process</p>
-                </div>
-                <div class="challenges_item">
-                    <i class="fa-solid fa-people-robbery"></i>
-                    <p>How We Help</p>
-                </div>
-                <div class="challenges_item">
-                    <i class="fa-solid fa-panorama"></i>
-                    <p>UI/UX Design</p>
-                </div>
-                <div class="challenges_item">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <p>Creative Ideas</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- SERVICES -->
-    <section class="SERVICES1">
-        <div class="container sevices">
-            <h2>Always there for your care, our Services</h2>
-            <div class="row sevices_card">
-                <div class="card col-lg-4 col-md-6">
-                    <div class="sevices_box">
-                        <div class="sevices_img">
-                            <img src="./img/services1.jpg" class="card-img-top" alt="...">
-                            <button class="btn btn-primary">Work Expertise</button>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.</p>
-                            <a href="">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="sevices_box">
-                        <div class="sevices_img">
-                            <img src="./img/services2.jpg" class="card-img-top" alt="...">
-                            <button class="btn btn-primary">Product Development</button>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.</p>
-                            <a href="">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="sevices_box">
-                        <div class="sevices_img">
-                            <img src="./img/services3.jpg" class="card-img-top" alt="...">
-                            <button class="btn btn-primary">Software Development</button>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.</p>
-                            <a href="">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- OUR GALLERY -->
     <section class="OUR_GALLERY">
         <div class="container gallery">
             <div class="gallery_text">
-                <h4>OUR GALLERY</h4>
-                <h2>Successful projects we've done</h2>
+                <h4>TRUNG TÂM SÁT HẠCH</h4>
+                <h2>Hình ảnh thực tế</h2>
             </div>
             <div class="row gallery_card">
                 <div class="col-lg-4 col-md-6">
                     <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 1"
-                        data-src="./img/gallery1.jpg">
+                        data-src="./img/anh1.jpeg">
                         <div class="gallery_item">
-                            <img class="card-img-bottom" src="./img/gallery1.jpg" alt="">
+                            <img class="card-img-bottom" src="./img/anh1.jpeg" alt="">
                             <div class="gallery_overlay"></div>
                             <div class="gallery_content">
                                 <p>Project 1</p>
@@ -368,9 +393,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 2"
-                        data-src="./img/gallery2.jpg">
+                        data-src="./img/anh2.jpeg">
                         <div class="gallery_item">
-                            <img class="card-img-bottom" src="./img/gallery2.jpg" alt="">
+                            <img class="card-img-bottom" src="./img/anh2.jpeg" alt="">
                             <div class="gallery_overlay"></div>
                             <div class="gallery_content">
                                 <p>Project 2</p>
@@ -381,9 +406,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 3"
-                        data-src="./img/gallery3.jpg">
+                        data-src="./img/anh4.png">
                         <div class="gallery_item">
-                            <img class="card-img-bottom" src="./img/gallery3.jpg" alt="">
+                            <img class="card-img-bottom" src="./img/anh4.png" alt="">
                             <div class="gallery_overlay"></div>
                             <div class="gallery_content">
                                 <p>Project 3</p>
@@ -394,9 +419,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 4"
-                        data-src="./img/gallery4.jpg">
+                        data-src="./img/anh8.jpeg">
                         <div class="gallery_item">
-                            <img class="card-img-bottom" src="./img/gallery4.jpg" alt="">
+                            <img class="card-img-bottom" src="./img/anh8.jpeg" alt="">
                             <div class="gallery_overlay"></div>
                             <div class="gallery_content">
                                 <p>Project 4</p>
@@ -407,9 +432,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 5"
-                        data-src="./img/gallery5.jpg">
+                        data-src="./img/anh9.png">
                         <div class="gallery_item">
-                            <img class="card-img-bottom" src="./img/gallery5.jpg" alt="">
+                            <img class="card-img-bottom" src="./img/anh9.png" alt="">
                             <div class="gallery_overlay"></div>
                             <div class="gallery_content">
                                 <p>Project 5</p>
@@ -420,9 +445,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <a href="" class="gallery_box" data-fancybox="gallery" data-caption="Project 6"
-                        data-src="./img/gallery6.jpg">
+                        data-src="./img/anh12.jpeg">
                         <div class="gallery_item">
-                            <img class="card-img-bottom" src="./img/gallery6.jpg" alt="">
+                            <img class="card-img-bottom" src="./img/anh12.jpeg" alt="">
                             <div class="gallery_overlay"></div>
                             <div class="gallery_content">
                                 <p>Project 6</p>
@@ -432,156 +457,129 @@
                     </a>
                 </div>
             </div>
-            <!-- ----LOGO---- -->
-            <div class="row gallery_logos pt-5 mt-5">
-                <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand1.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand2.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand3.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand4.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./img/brand5.png" alt="">
-                </div>
-            </div>
 
         </div>
     </section>
 
 
-    <!-- SKILL -->
-    <section class="SKILL_SUCCESS">
-        <div class="row container skill">
-            <div class="skill_left col-lg-6">
-                <img src="./img/skill.jpg" alt="">
-            </div>
-            <div class="skill_right col-lg-6">
-                <h4>YOUR SUCCESS IS OUR SUCCESS</h4>
-                <h2>Web design, marketing & SEO solutions that get results</h2>
-                <div class="skill_info info1">
-                    <div class="skill_text">
-                        <p>Marketing</p>
-                        <p>80%</p>
-                    </div>
-                    <div class="skill_dark">
-                        <div class="skill_line">
-                        </div>
-                    </div>
-                </div>
-                <div class="skill_info info2">
-                    <div class="skill_text">
-                        <p>Responsive Web design</p>
-                        <p>95%</p>
-                    </div>
-                    <div class="skill_dark">
-                        <div class="skill_line">
-                        </div>
-                    </div>
-                </div>
-                <div class="skill_info info3">
-                    <div class="skill_text">
-                        <p>Analytics</p>
-                        <p>60%</p>
-                    </div>
-                    <div class="skill_dark">
-                        <div class="skill_line">
-                        </div>
-                    </div>
-                </div>
-                <div class="skill_info info4">
-                    <div class="skill_text">
-                        <p>Web Development</p>
-                        <p>85%</p>
-                    </div>
-                    <div class="skill_dark">
-                        <div class="skill_line">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+    <!-- NEWS -->
+    <section class="NEWS1">
+        <div class="container news">
+            <h4>TIN TỨC</h4>
+            <h2>Cập nhật thông tin mới nhất về thi bằng lái</h2>
+            <div class="news_card">
+                <div class="news_card_item">
+                    <div class="row news_box">
+                        <div class="news_img col-lg-4 col-md-6">
+                            <img src="./img/anh3.jpeg"  alt="...">
+                        </div>
+                        <div class="card-body col-lg-8 col-md-6">
+                            <h3>Điều chỉnh thời gian học thực hành lái xe ô tô</h3>
+                            <p class="card-text">
+                                Ngày 22/4/2022, Bộ trưởng Bộ Giao thông Vận tải đã ban hành Thông tư số 04/2022/TT-BGTVT sửa đổi Thông tư số 12/2017/TT-BGTVT quy định về đào tạo, sát hạch, cấp giấy phép lái xe cơ giới đường bộ. Theo đó, điều chỉnh thời gian học thực hành lái xe ô tô trong chương trình đào tạo lái xe ô tô như sau ...
+                            </p>
+                            <a href="">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news_card_item">
+                <div class="row news_box">
+                    <div class="news_img col-lg-4 col-md-6">
+                        <img src="./img/anh2.jpeg"  alt="...">
+                    </div>
+                    <div class="card-body col-lg-8 col-md-6">
+                        <h3>Một số thay đổi cần biết khi học lái xe ô tô</h3>
+                        <p class="card-text">
+                            Quy định mới tăng thời gian học thực hành lái xe trên đường. Có hiệu lực từ ngày 15/6/2022, Thông tư 04/2022/TT-BGTVT đã điều chỉnh lại thời gian học thực hành lái xe trong chương trình đào tạo lái xe ô tô đối với hạng B1, B2 và C. Cụ thể: Với chương trình đào tạo lái xe ô tô hạng B1.1 (số tự động), thời gian thực hành trên sân tập lái giảm 04 giờ (từ 45 giờ xuống 41 giờ) ...
+                        </p>
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news_card_item">
+                <div class="row news_box">
+                    <div class="news_img col-lg-4 col-md-6">
+                        <img src="./img/anh9.png"  alt="...">
+                    </div>
+                    <div class="card-body col-lg-8 col-md-6">
+                        <h3>Điều chỉnh thời gian học thực hành lái xe ô tô</h3>
+                        <p class="card-text">
+                            Ngày 22/4/2022, Bộ trưởng Bộ Giao thông Vận tải đã ban hành Thông tư số 04/2022/TT-BGTVT sửa đổi Thông tư số 12/2017/TT-BGTVT quy định về đào tạo, sát hạch, cấp giấy phép lái xe cơ giới đường bộ. Theo đó, điều chỉnh thời gian học thực hành lái xe ô tô trong chương trình đào tạo lái xe ô tô như sau ...
+                        </p>
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
+
+
 
 
     <!-- FEEDBACK -->
     <section class="FEEDBACK">
         <div class="container feedback">
             <div class="feedback_text">
-                <h4>HAPPY CLIENTS FEEDBACK</h4>
-                <h2>Reviews and Testimonials</h2>
+                <h4>KHÁCH HÀNG</h4>
+                <h2>Cảm nhận và chia sẻ</h2>
             </div>
             <div class="feedback_slide">
                 <div class="feedback_item">
                     <p>
-                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
-                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
-                        dolor
-                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        Mình đã từng mất khá nhiều thời gian vào trung tâm khác nhưng vẫn không đậu , may mắn là gặp được trung tâm tập lái này, mình được thầy tên cường kèm và học rất nhanh tiến bộ , rất cảm ơn thầy và trung tâm đào tạo giúp đỡ tận tình trong việc học lái xe ô tô.
                     </p>
                     <div class="feedback_people">
                         <div class="feedback_img">
                             <img src="./img/feedback1.jpg" alt="">
                         </div>
                         <div class="feedback_name">
-                            <h5>John Wilson</h5>
+                            <h5>Nguyễn Thị A</h5>
                             <p>Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="feedback_item">
                     <p>
-                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
-                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
-                        dolor
-                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        Mình đã từng mất khá nhiều thời gian vào trung tâm khác nhưng vẫn không đậu , may mắn là gặp được trung tâm tập lái này, mình được thầy tên cường kèm và học rất nhanh tiến bộ , rất cảm ơn thầy và trung tâm đào tạo giúp đỡ tận tình trong việc học lái xe ô tô.
                     </p>
                     <div class="feedback_people">
                         <div class="feedback_img">
                             <img src="./img/feedback2.jpg" alt="">
                         </div>
                         <div class="feedback_name">
-                            <h5>Julia Sakura</h5>
+                            <h5>Nguyễn Thị A</h5>
                             <p>Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="feedback_item">
                     <p>
-                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
-                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
-                        dolor
-                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        Mình đã từng mất khá nhiều thời gian vào trung tâm khác nhưng vẫn không đậu , may mắn là gặp được trung tâm tập lái này, mình được thầy tên cường kèm và học rất nhanh tiến bộ , rất cảm ơn thầy và trung tâm đào tạo giúp đỡ tận tình trong việc học lái xe ô tô.
                     </p>
                     <div class="feedback_people">
                         <div class="feedback_img">
                             <img src="./img/feedback3.jpg" alt="">
                         </div>
                         <div class="feedback_name">
-                            <h5>Roy Linderson</h5>
+                            <h5>Nguyễn Thị A</h5>
                             <p>Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="feedback_item">
                     <p>
-                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
-                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
-                        dolor
-                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        Mình đã từng mất khá nhiều thời gian vào trung tâm khác nhưng vẫn không đậu , may mắn là gặp được trung tâm tập lái này, mình được thầy tên cường kèm và học rất nhanh tiến bộ , rất cảm ơn thầy và trung tâm đào tạo giúp đỡ tận tình trong việc học lái xe ô tô.
                     </p>
                     <div class="feedback_people">
                         <div class="feedback_img">
                             <img src="./img/feedback4.jpg" alt="">
                         </div>
                         <div class="feedback_name">
-                            <h5>Smith Johnson</h5>
+                            <h5>Nguyễn Thị A</h5>
                             <p>Student</p>
                         </div>
                     </div>
@@ -594,122 +592,26 @@
 
 
 
-    <!-- LATEST NEWS -->
-    <section class="LATEST_NEWS">
-        <div class="container news">
-            <h4>LATEST NEWS</h4>
-            <h2>Our insight and articles</h2>
-            <div class="row news_card">
-                <div class="card col-lg-4 col-md-6">
-                    <div class="news_box">
-                        <div class="news_img">
-                            <a href="">
-                                <img src="./img/blog1.jpg" class="card-img-top" alt="...">
-                            </a>
-                        </div>
-                        <div class="news_body">
-                            <a href="">Startup Business</a><br>
-                            <a href="">Hello world!</a>
-                        </div>
-                        <div class="news_footer">
-                            <a href=""><img src="./img/iconTLNA2.png" alt=""></a>
-                            <div>
-                                <span>by</span>
-                                <a href="">NgocAnh</a>
-                            </div>
-                            <div>
-                                <span>April 1, 2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="news_box">
-                        <div class="news_img">
-                            <a href="">
-                                <img src="./img/blog2.jpg" class="card-img-top" alt="...">
-                            </a>
-                        </div>
-                        <div class="news_body">
-                            <a href="">Business in NY</a><br>
-                            <a href="">Companies in NY</a>
-                        </div>
-                        <div class="news_footer">
-                            <a href=""><img src="./img/iconTLNA2.png" alt=""></a>
-                            <div>
-                                <span>by</span>
-                                <a href="">NgocAnh</a>
-                            </div>
-                            <div>
-                                <span>April 1, 2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="news_box">
-                        <div class="news_img">
-                            <a href="">
-                                <img src="./img/blog3.jpg" class="card-img-top" alt="...">
-                            </a>
-                        </div>
-                        <div class="news_body">
-                            <a href="">Marketing Strategy</a><br>
-                            <a href="">Design breakthrough</a>
-                        </div>
-                        <div class="news_footer">
-                            <a href=""><img src="./img/iconTLNA2.png" alt=""></a>
-                            <div>
-                                <span>by</span>
-                                <a href="">NgocAnh</a>
-                            </div>
-                            <div>
-                                <span>April 1, 2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- CONTACT/EMAIL -->
 
     <!-- FOOTER -->
     <footer>
         <div class="container footer_top">
             <div class="footer_top__text">
-                <h2>Let’s find out how to work together</h2>
+                <h2>Liên hệ ngay để nhận các ưu đãi hấp dẫn</h2>
                 <p>
                     Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem
                     ipsum dolor sit amet elit.
                 </p>
-            </div>
-            <div class="footer_top__form">
-                <form class=".container-sm footer_top__mail">
-                    <input type="email" placeholder="Your Email Address">
-                    <button>
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                    <button>
-                        <span>Subscribe</span>
-                    </button>
-                </form>
             </div>
         </div>
         <hr>
         <div class="row container footer_button">
             <div class="col-lg-4 col-md-6 footer_button__1">
                 <a class="header_logo" href="#">
-                    <i class="fa fa-align-right"></i>
+                    <img src="./img/logo.png" alt="">
                     <div class="header_logo_text">
-                        <h3>Corp Vision</h3>
-                        <p>Vision to your Future</p>
+                        <h3>SÁT HẠCH LÁI XE</h3>
+                        <p>15 ĐINH TIÊN HOÀNG - YÊN BÁI</p>
                     </div>
                 </a>
                 <p>
@@ -727,42 +629,45 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 footer_button__2">
-                <h3>CONTACT INFO</h3>
-                <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+                <h3>LIÊN HỆ</h3>
+                <p>Địa chỉ: 15 Đinh Tiên Hoàng - TP. Yên Bái</p>
                 <div>
                     <span>Phone Number:</span>
-                    <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+                    <a href="tel:091 234 4567">091 234 4567</a>
                 </div>
                 <div>
                     <span>Email:</span>
-                    <a href="mailto::info@example.com">info@example.com</a>
+                    <a href="mailto::info@yenbai.com">info@yenbai.com</a>
                 </div>
                 <div>
                     <span>Support:</span>
-                    <a href="mailto::info@support.com">info@support.com</a>
+                    <a href="mailto::yenbai@support.com">yenbai@support.com</a>
                 </div>
 
             </div>
             <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__3">
-                <h3>CATEGORIES</h3>
+                <h3>LUYỆN THI</h3>
                 <ul>
-                    <li><a href="">Marketing Strategy</a></li>
-                    <li><a href="">Startup Business</a></li>
-                    <li><a href="">Web development</a></li>
+                    <li><a href="">Bằng B1</a></li>
+                    <li><a href="">Bằng B2</a></li>
+                    <li><a href="">Bằng C</a></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__4">
-                <h3>META</h3>
+                <h3>THÔNG TIN</h3>
                 <ul>
-                    <li><a href="">Log in</a></li>
-                    <li><a href="">Entries feed</a></li>
-                    <li><a href="">Comments feed</a></li>
-                    <li><a href="">WordPress.org</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thi thử</a></li>
+                    <li><a href="">Bài giảng</a></li>
                 </ul>
             </div>
         </div>
@@ -772,7 +677,7 @@
                 <p>
                     © 2024 All Rights Reserved | Design by
                     <span>
-                        Trần Lưu Ngọc Anh "siêu cấp đẹp trai"
+                        Zaha Việt Nam
                     </span>
                     .
                 </p>
@@ -796,28 +701,6 @@
 
     <!-- JS HTML -->
     <Script src="./JS/index.js"></Script>
-
-    <!-- PHIÊN BẢN SÁNG TỐI - DARK LIGHT -->
-    <script>
-        const body = document.body
-        const switch_mode = document.querySelector('#dark_light i')
-        //4. load mode
-        let mode = localStorage.getItem('darkmode');
-        if (mode == 'true') {
-            body.classList.add('body_dark');
-            switch_mode.className = 'bi-brightness-high-fill';
-        }
-
-        switch_mode.addEventListener('click', () => {
-            // 1. kiểm tra đã nhận click chưa: alert('Clicked!');
-            let mode = body.classList.toggle('body_dark');
-            //2. đổi icon
-            switch_mode.classList.toggle('bi-moon-stars');
-            switch_mode.classList.toggle('bi-brightness-high-fill');
-            //3. save mode: load lại trang vẫn ở chế độ đã chọn
-            localStorage.setItem('darkmode', mode)
-        })
-    </script>
 
 
     <!-- BOOTSTRAP JS -->
